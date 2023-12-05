@@ -9,7 +9,6 @@
 
 
 :root {
-  --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -4471,7 +4470,7 @@ fieldset:disabled .btn {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #B28F4B;
+  color: #FFBC4B;
 }
 
 .nav-link.disabled {
@@ -7189,8 +7188,9 @@ fieldset:disabled .btn {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  background-color: #B28F4B;
-
+  border-radius: 0px 26.914px 0px 0px;
+  background: linear-gradient(269deg, #FFBC4B 10.79%, #FFD99A 33.04%, #FFCB74 59.98%, #FFDB9D 80.37%, #FFBC4B 99.18%);
+  box-shadow: -1px -1px 10px 0px #E9C17D;
 }
 
 .offcanvas-header .btn-close {
@@ -7204,7 +7204,7 @@ fieldset:disabled .btn {
   margin-bottom: 0;
   line-height: 1.5;
   font-size: 30px;
-  color: #fff;
+  color: #000;
   font-family: "Montserrat" !important;
 }
 
@@ -14313,6 +14313,10 @@ form:hover .icon-search>svg path,
   .frame-1-mobile {
     display: none;
   }
+
+  .frame-1-4-mobile{
+    display: none;
+  }
 }
 
 
@@ -14330,23 +14334,23 @@ form:hover .icon-search>svg path,
 
   .frame-1-mobile {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: #B28F4B;
+    background-color: #FFBC4B;;
     width: 100%;
     height: 5rem;
   }
 
   .frame-1-1-mobile>button {
     border: none;
-    background-color: inherit;
+    background-color: inherit !important;
   }
 
   .frame-1-3-mobile {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .frame-bttn-mobile {
@@ -14355,7 +14359,7 @@ form:hover .icon-search>svg path,
     font-size: 30px;
     border: none;
     background-color: inherit;
-    color: #fff;
+    color: #000;
   }
 
   .menu {
@@ -14380,6 +14384,7 @@ form:hover .icon-search>svg path,
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 2rem;
   }
 
   .form-mobile {
@@ -14391,7 +14396,7 @@ form:hover .icon-search>svg path,
   }
 
   .form-mobile>input {
-    height: 3rem;
+    height: 2rem;
     background: inherit;
     border: none !important;
     color: #fff;
@@ -14403,18 +14408,13 @@ form:hover .icon-search>svg path,
   }
 
   .form-mobile>button {
-    height: 3rem;
     width: 2rem;
-    background: linear-gradient(180deg, #FFF 0, rgba(255, 255, 255, 0.65) 100%);
-    border: solid 3px #fff;
-    border-radius: 1.5rem 1.5rem 0 0;
-    padding: 0;
+    border: none;
+    background-color: inherit;
   }
-
-
-  .form-mobile>button>span>svg>path {
-    fill: #B28F4B;
-  }
+  /* .form-mobile>button>span>svg>path {
+    
+  } */
 
 
 
@@ -14511,7 +14511,7 @@ footer {
   font-weight: 200;
   position: relative;
   text-transform: uppercase;
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: 'Montserrat';
 }
 
 .footer-col ul {
@@ -14615,7 +14615,7 @@ footer {
   font-weight: 200;
   position: relative;
   text-transform: uppercase;
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: 'Montserrat';
 }
 
 .aboutUs-aboutUs>p {
@@ -14641,7 +14641,7 @@ footer {
   font-weight: 200;
   position: relative;
   text-transform: uppercase;
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: 'Montserrat';
 }
 
 .aboutUs-aboutUs2>p {
@@ -14681,11 +14681,40 @@ justify-content: space-around;
 
 
 /* Responsivo */
+
+@media (max-width: 1250px){
+
+  .aboutUs-aboutUs>p{
+    font-size: 12px;
+  }
+
+  .aboutUs-aboutUs2Filho>h3{
+    font-size: 15px;
+  }
+
+  .aboutUs-aboutUs2Filho>button{
+    width: 250px;
+    font-size: 15px;
+    gap: 0rem;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+  .abovefooter{
+    display: none;
+  }
+
+}
+
+
 @media (max-width: 800px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
+
 }
 
 @media (max-width:600px) {
@@ -14696,7 +14725,6 @@ justify-content: space-around;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-
   }
 
   .row-footer {
@@ -14718,6 +14746,15 @@ justify-content: space-around;
   .footer-col>ul {
     padding: 0;
   }
+
+
+  .social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
 }
 
 
