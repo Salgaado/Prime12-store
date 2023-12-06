@@ -14571,6 +14571,10 @@ footer {
   margin-bottom: 2rem;
 }
 
+.mpayment{
+  width: 12rem;
+}
+
 
 
 /* aboutUs */
@@ -14718,6 +14722,12 @@ justify-content: space-around;
 }
 
 @media (max-width:600px) {
+  footer{
+    background-image: url(https://i.postimg.cc/ZKgRFXvf/FOOTER-MOBILE.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
   .footer-col {
     width: 100%;
     display: flex;
@@ -14754,7 +14764,13 @@ justify-content: space-around;
     justify-content: center;
     gap: 2rem;
     margin-bottom: 2rem;
-}
+  }
+
+  .mpayment{
+    width: 10rem;
+  }
+
+
 }
 
 
